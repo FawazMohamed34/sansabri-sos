@@ -1,0 +1,131 @@
+@import "styles";
+
+%title-presentation{
+  height:250px;
+  background: $brand-color;
+ }
+
+main{
+  z-index: 1;
+}
+body{
+  background: $bg-neutre;
+
+}
+.myNav{
+  margin-bottom: -5px;
+}
+  .title{
+  @extend %title-presentation;
+  }
+
+@mixin btn-radius{
+  border-radius: 3rem;
+}
+
+.brand-bg-darken
+{
+  background: darken($brand-color,4%);
+}
+
+
+header{
+  background: $dark-transparent;
+  height: 90px;
+
+.donation{
+    background: $red;
+    @include btn-radius;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: calc(1.5rem + .6vw);
+    color:white;
+     &:hover{
+       color: $brand-color;
+     }
+  }
+}
+
+
+.brand{
+  background: $brand-color;
+}
+.block{
+  height: 250px;
+}
+
+  main {
+    .parallax {
+      background: url(images/parallax.jpg) no-repeat;
+      height: 500px;
+      background-attachment: fixed;
+      h1{
+        background: rgba(27, 26, 26,0.95);
+      }
+    @media(min-width: $md) {
+        background: url(images/parallax-md.jpg);
+        height: 600px;
+        background-size: cover;
+        background-attachment: fixed;
+    
+      }
+    
+        @media(min-width: $lg) {
+          background: url(images/parallax-lg.jpg);
+          height: 600px;
+          background-size: cover;
+          background-attachment: fixed;
+        }  
+  }
+}
+.myAlert{
+  @include btn-radius;
+  background-color: darken($red,20%);
+  
+  &:hover{
+    background: darken($red, 4%);
+  }
+}
+
+.link{
+  background-color: lighten($red,20%);
+}
+
+.hover:hover{
+  transform: scale(1.1);
+}
+.hover-link:hover{
+  transform: scale(1.4);
+}
+
+
+.myNavbarCollapse{
+  @media(max-width:$md){
+    z-index: 2;
+    width: 80vw;
+    height: 80vh;
+    background: $dark-transparent;
+    }
+}
+
+  .myNavigation{
+    padding: 0.5rem 1rem;
+    padding-left: 0;
+    display: block;
+  @media(max-width:$md){
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+
+  &:hover{
+    box-shadow: rgba(46, 38, 38, 0.582) 5px 9px 5px;
+    color: rgb(41, 36, 36);
+  }
+}
+  }
+  
+.event {
+  background: $brand-100;
+}

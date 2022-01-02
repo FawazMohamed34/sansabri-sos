@@ -1,0 +1,132 @@
+.title {
+  height: 250px;
+  background: #FDCEA9;
+}
+
+main {
+  z-index: 1;
+}
+
+body {
+  background: #84A583;
+}
+
+.myNav {
+  margin-bottom: -5px;
+}
+
+.brand-bg-darken {
+  background: #fdc395;
+}
+
+header {
+  background: rgba(83, 77, 77, 0.664);
+  height: 90px;
+}
+
+header .donation {
+  background: #EA495F;
+  border-radius: 3rem;
+}
+
+header a {
+  text-decoration: none;
+  font-size: calc(1.5rem + .6vw);
+  color: white;
+}
+
+header a:hover {
+  color: #FDCEA9;
+}
+
+.brand {
+  background: #FDCEA9;
+}
+
+.block {
+  height: 250px;
+}
+
+main .parallax {
+  background: url(images/parallax.jpg) no-repeat;
+  height: 500px;
+  background-attachment: fixed;
+}
+
+main .parallax h1 {
+  background: rgba(27, 26, 26, 0.95);
+}
+
+@media (min-width: 768px) {
+  main .parallax {
+    background: url(images/parallax-md.jpg);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 992px) {
+  main .parallax {
+    background: url(images/parallax-lg.jpg);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.myAlert {
+  border-radius: 3rem;
+  background-color: #b8152b;
+}
+
+.myAlert:hover {
+  background: #e8374f;
+}
+
+.link {
+  background-color: #f5a4af;
+}
+
+.hover:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hover-link:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+@media (max-width: 768px) {
+  .myNavbarCollapse {
+    z-index: 2;
+    width: 80vw;
+    height: 80vh;
+    background: rgba(83, 77, 77, 0.664);
+  }
+}
+
+.myNavigation {
+  padding: 0.5rem 1rem;
+  padding-left: 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .myNavigation {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .myNavigation:hover {
+    -webkit-box-shadow: rgba(46, 38, 38, 0.582) 5px 9px 5px;
+            box-shadow: rgba(46, 38, 38, 0.582) 5px 9px 5px;
+    color: #292424;
+  }
+}
+
+.event {
+  background: #fdc89f;
+}
+/*# sourceMappingURL=styles.css.map */
